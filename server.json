@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "foods": [
     {
       "id": 1,
@@ -25,4 +26,23 @@
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
     }
   ]
+=======
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+>>>>>>> 13afcf2c99501885776a17be712c11836caa1e77
 }

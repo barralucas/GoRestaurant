@@ -1,11 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "refactoring-classes-ts",
+=======
+  "name": "go",
+>>>>>>> 13afcf2c99501885776a17be712c11836caa1e77
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+<<<<<<< HEAD
     "@unform/core": "^2.1.6",
     "@unform/web": "^2.1.6",
     "axios": "^0.21.1",
@@ -17,6 +22,19 @@
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.1",
     "yup": "^0.32.9"
+=======
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-icons": "^3.0.0",
+    "@types/styled-components": "^5.1.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+>>>>>>> 13afcf2c99501885776a17be712c11836caa1e77
   },
   "scripts": {
     "start": "react-scripts start",
@@ -44,10 +62,13 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/react": "^17.0.15",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
     "@types/styled-components": "^5.1.11",
+=======
+>>>>>>> 13afcf2c99501885776a17be712c11836caa1e77
     "json-server": "^0.16.3"
   }
 }
