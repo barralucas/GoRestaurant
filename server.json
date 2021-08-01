@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "foods": [
     {
       "id": 1,
@@ -14,7 +13,7 @@
       "name": "qweqweqwe",
       "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
       "price": "21.90",
-      "available": true,
+      "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png"
     },
     {
@@ -24,25 +23,14 @@
       "price": "25.90",
       "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food3.png"
+    },
+    {
+      "image": "asd",
+      "name": "asd",
+      "price": "asd",
+      "description": "asd",
+      "available": true,
+      "id": 4
     }
   ]
-=======
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
->>>>>>> 13afcf2c99501885776a17be712c11836caa1e77
 }
