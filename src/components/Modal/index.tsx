@@ -9,21 +9,21 @@ interface ModalProps {
 
 export default function Modal({ isOpen, setIsOpen, children }: ModalProps) {
 
-  const [modalStatus, setModalStatus] = useState(isOpen);
+  // const [modalStatus, setModalStatus] = useState(isOpen);
 
-  const isOpenRef = useRef(isOpen);
+  // const isOpenRef = useRef(isOpen);
 
-  useEffect(() => {
-    if (!isOpenRef !== isOpen) {
-      setModalStatus(isOpen);
-    }
-  }, [isOpen]);
+  // useEffect(() => {
+  //   if (!isOpenRef !== isOpen) {
+  //     setModalStatus(isOpen);
+  //   }
+  // }, [isOpen]);
 
   return (
     <ReactModal
       shouldCloseOnOverlayClick={!false}
       onRequestClose={setIsOpen}
-      isOpen={modalStatus}
+      isOpen={isOpen}
       ariaHideApp={false}
       style={{
         content: {

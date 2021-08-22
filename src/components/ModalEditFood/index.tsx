@@ -5,27 +5,29 @@ import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
 import { useRef } from 'react';
-import { FoodContent } from '../../pages/Dashboard';
+import { FormHandles } from '@unform/core';
+import { FoodType } from '../../types';
+
 
 interface ModalEditFoodProps {
   setIsOpen: () => void;
-  handleUpdateFood: (data?: any) => void;
-  editingFood?: FoodContent;
+  handleUpdateFood: (editingFood: FoodType) => void;
+  editingFood?: FoodType;
   isOpen: boolean;
 }
 
 export default function ModalEditFood({ setIsOpen, handleUpdateFood, isOpen, editingFood }: ModalEditFoodProps) {
 
-  const formRef = useRef<HTMLFormElement>();
+  const formRef = useRef<FormHandles>();
 
-  async function handleSubmit(data: any) {
-    handleUpdateFood(data);
+  async function handleSubmit(food: FoodType) {
+    handleUpdateFood(food);
     setIsOpen();
   }
 
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
-      <Form ref={formRef} onSubmit={handleSubmit} initialData={editingFood}>
+      <Form ref={() => formRef} onSubmit={handleSubmit} initialData={editingFood}>
         <h1>Editar Prato</h1>
         <Input name="image" placeholder="Cole o link aqui" />
 

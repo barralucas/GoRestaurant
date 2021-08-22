@@ -7,31 +7,27 @@ import { FormHandles } from '@unform/core';
 import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
+import { FoodType } from '../../types';
 
-type AddFood = {
-  description: string;
-  image: string;
-  name: string;
-  price: string;
-}
+
 interface ModalAddFoodProps {
   isOpen: boolean;
   setIsOpen: () => void;
-  handleAddFood: (data: AddFood) => void;
+  handleAddFood: (food: FoodType) => void;
 }
 
 export default function ModalAddFood({ isOpen, setIsOpen, handleAddFood }: ModalAddFoodProps) {
 
-  const formRef = useRef<HTMLFormElement>();
+  const formRef = useRef<FormHandles>(null);
 
-  async function handleSubmit(data: AddFood) {
-    handleAddFood(data);
+  async function handleSubmit(newFood: FoodType) {
+    handleAddFood(newFood);
     setIsOpen();
   }
 
   return (
     <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
-      <Form ref={formRef.current?.getData} onSubmit={handleSubmit}>
+      <Form ref={() => formRef} onSubmit={handleSubmit}>
         <h1>Novo Prato</h1>
         <Input name="image" placeholder="Cole o link aqui" />
 
